@@ -103,7 +103,7 @@ static bool register_tool(const char *id, const char *name)
     QString exefile = name; // default: use the program in PATH
 #ifdef TOOLS_IN_DATA_PATH // Search external tools in <datapath>/tools
 #ifdef Q_OS_WIN32 // executable files must end with .exe on MS Windows
-    exefile = Paths::dataFileName("tools/%1.exe").arg(name);
+    exefile = Paths::dataFileName("D:/msys64/usr/local/ffmpeg/bin/%1.exe").arg(name);
 #else
     exefile = Paths::dataFileName("tools/%1").arg(name);
 #endif // Q_OS_WIN32
